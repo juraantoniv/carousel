@@ -5,10 +5,10 @@ import {OwlCaurosel} from "./components/carousel/caurosel";
 
 function App() {
   return (
-    <>
+    <div style={{display:'flex' ,justifyContent:'center'}}>
       <OwlCaurosel/>
 
-    </>
+    </div>
   );
 }
 

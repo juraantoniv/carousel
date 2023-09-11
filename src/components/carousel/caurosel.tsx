@@ -7,6 +7,8 @@ import './TestiMonials.css'
 import PlayButton from "../playButton/playButton";
 import left from "../../Icons/back.png"
 import right from "../../Icons/next.png"
+import rightJPG from "../../Icons/nextJPG.jpg"
+import leftJPG from "../../Icons/backJPG.jpg"
 
 
 
@@ -57,7 +59,7 @@ export const OwlCaurosel = () => {
         autoplay: type,
         dots: true,
         autoplayTimeout: 8500,
-        navText: ["<img className='nav-button owl-prev' src={left} >", "<img className='nav-button owl-next' src={right}>"],
+        navText: ["<img className='nav-button owl-prev' src={leftJPG}>‹</img>", "<div class='nav-button owl-next'>›</div>"],
         smartSpeed: 450,
         nav: true,
         responsive: {
@@ -81,7 +83,7 @@ export const OwlCaurosel = () => {
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
             <div className="container mt-5">
-                <div style={{ border:'1px solid', width:'1500px',padding:'0 20px 0 20px'}}>
+                <div style={{ width:'1700px',padding:'0 20px 0 20px'}}>
                     <div className="col-md-12">
                         <div style={{display:'flex',alignItems:'center',flexDirection:'row-reverse', height:'80px', background:'darkblue', paddingRight:'200px'}}>
                         <PlayButton play={playHandler}/>
