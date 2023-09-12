@@ -42,16 +42,22 @@
 .owl-dot span{
     background-color: white !important;
 }
-.owl-next{
+.owl1{
     position: absolute;
-    right: -25px !important;
+    right: -33px !important;
     top: 10px;
+    background: transparent;
+    width: 30px;
+    height: 30px;
 }
 
-.owl-prev{
+.owl2{
     position: absolute;
-    left: -25px !important;
+    left: -34px !important;
     top: 10px;
+    background: transparent;
+    width: 30px;
+    height: 30px;
 }
 
 .owl-dots{
@@ -75,6 +81,7 @@
 
 }
 
-img{
-    width: 100%;
+.width{
+    width: 100px !important;
 }
+

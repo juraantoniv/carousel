@@ -9,6 +9,8 @@ import left from "../../Icons/back.png"
 import right from "../../Icons/next.png"
 import rightJPG from "../../Icons/nextJPG.jpg"
 import leftJPG from "../../Icons/backJPG.jpg"
+import iimage from '../../Icons/nextJPG.jpg'
+const image = require('../../Icons/nextJPG.jpg')
 
 
 
@@ -18,6 +20,9 @@ export type DetailsType = {
     address: string;
     img: string;
 }
+
+
+
 export const OwlCaurosel = () => {
 
     const [type, setType]= useState<boolean>(true)
@@ -59,7 +64,7 @@ export const OwlCaurosel = () => {
         autoplay: type,
         dots: true,
         autoplayTimeout: 8500,
-        navText: ["<img className='nav-button owl-prev' src={leftJPG}>‹</img>", "<div class='nav-button owl-next'>›</div>"],
+        navText: ["<img class='owl2' src='https://cdn.icon-icons.com/icons2/2249/PNG/512/arrow_left_circle_outline_icon_139954.png'/>", "<img  class='owl1' src='https://cdn.icon-icons.com/icons2/37/PNG/512/rightarrow_application_derecha_flech_4432.png'/>"],
         smartSpeed: 450,
         nav: true,
         responsive: {
